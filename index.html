@@ -1,14 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/AKPESSC-25/vite.svg" />
+    <link rel="icon" type="image/png" href="/AKPESSC-25/assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <script type="module" crossorigin src="/AKPESSC-25/assets/index-XqXN97Cx.js"></script>
-    <link rel="stylesheet" crossorigin href="/AKPESSC-25/assets/index-T4mLKdQY.css">
+    <title>AKPESSC 2025 - All Kerala Power Engineering Students' Summit & Convention</title>
+    <meta name="description" content="Join us for AKPESSC 2025 - the flagship annual congregation of power and energy engineering students from across Kerala. Experience cutting-edge technologies, insightful discussions, and networking opportunities." />
+    <meta name="keywords" content="AKPESSC, Kerala, Power Engineering, Energy, Students, Summit, Convention, 2025" />
+    <meta name="author" content="AKPESSC 2025" />
+    <meta property="og:title" content="AKPESSC 2025 - All Kerala Power Engineering Students' Summit & Convention" />
+    <meta property="og:description" content="Join us for AKPESSC 2025 - the flagship annual congregation of power and energy engineering students from across Kerala." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    
+    <!-- Nexus Fonts with optimized loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+    
+    <!-- Nexus Smooth Scrolling -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css">
+    
+    <!-- Nexus Styles -->
+    <style>
+      /* Ensure all elements inherit the color from its parent */
+      a,
+      .w-input,
+      .w-select,
+      .w-tab-link,
+      .w-nav-link,
+      .w-nav-brand,
+      .w-dropdown-btn,
+      .w-dropdown-toggle,
+      .w-slider-arrow-left,
+      .w-slider-arrow-right,
+      .w-dropdown-link {
+        color: inherit;
+        text-decoration: inherit;
+        font-size: inherit;
+      }
+
+      /* Focus state style for keyboard navigation for the focusable elements */
+      *[tabindex]:focus-visible,
+        input[type="file"]:focus-visible {
+         outline: 0.125rem solid #4d65ff;
+         outline-offset: 0.125rem;
+      }
+
+      /* Content is now visible by default */
+      
+      /* Loading fallback */
+      #root {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+      }
+      
+      /* Loading spinner */
+      .loading-spinner {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(255, 255, 255, 0.1);
+        border-top: 3px solid #0BEC44;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        z-index: 9999;
+      }
+      
+      @keyframes spin {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
+      }
+    </style>
+    <script type="module" crossorigin src="/AKPESSC-25/assets/js/index-B2N_rsuQ.js"></script>
+    <link rel="modulepreload" crossorigin href="/AKPESSC-25/assets/js/vendor-CiW5Bwbg.js">
+    <link rel="modulepreload" crossorigin href="/AKPESSC-25/assets/js/animations-DGv7lWjg.js">
+    <link rel="stylesheet" crossorigin href="/AKPESSC-25/assets/css/index-CbVCn29l.css">
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="body">
+    <div id="root">
+      <div class="loading-spinner"></div>
+    </div>
+    
+    <!-- Nexus Smooth Scrolling Script -->
+    <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+    <script>
+      // Initialize Lenis smooth scrolling
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        direction: 'vertical',
+        gestureDirection: 'vertical',
+        smooth: true,
+        mouseMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+        infinite: false,
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script>
   </body>
 </html>
